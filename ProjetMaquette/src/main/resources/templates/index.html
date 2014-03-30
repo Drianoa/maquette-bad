@@ -1,167 +1,41 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-  
-  <head>
-    <title>Club Badminton Cessonnais - Accueil</title>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"></link>
-    <link rel="stylesheet" href="css/local.css"></link>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <style type="text/css">
-      .right-inner-addon {
-            position: relative;
-        }
-        .right-inner-addon input {
-           padding-right: 40px;     
-        }
-        .right-inner-addon i {
-            position: absolute;
-            right: 12px;
-            padding: 10px 12px;
-            pointer-events: none;
-        }  
-         .logo{
-           	background-image: url(img/logo.png); 
-           background-repeat:no-repeat;
-			background-position-y: 40%;background-position-X: 25%;
-			min-height: 160px;
-			height: 300px;
-          
+	xmlns:th="http://www.thymeleaf.org">
 
-           	
-        }
-    </style>
-  </head>
-  
-  <body>
+<div th:include="header"></div>
+<body>
+	<div th:include="menu"></div>
+	<div class="container">
+		<section class="conteneur">
+			<ol class="breadcrumb">
+				<li><a href="index.html">Accueil</a></li>
 
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> <a class="navbar-brand" href="#">Club Badminton Cessonnais</a>
+			</ol>
+			<div class="panel panel-default logo">
+				<div class="panel-heading">Bienvenue sur le site,</div>
+				<br />
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<ul style="list-style-type: none">
+							<li><a href="gererAdherent.html">Gérer les adhérents</a></li>
+							<li><a href="gerertournoi.html"> Gérer un tournoi</a></li>
+							<li><a href="#">Gérer les entrainements</a></li>
+							<li><a href="#">Acceder à la boutique</a></li>
+							<li><a href="administrer_droit.html">Administrer le site</a></li>
+						</ul>
 
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adhérent <b class="caret"></b></a>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</section>
+		<div th:include="footer"></div>
+	</div>
 
-              <ul
-              class="dropdown-menu">
-                <li> <a href="inscription_etape1.html">Inscription</a>
 
-                </li>
-                <li> <a href="recherche.html">Rechercher</a>
-
-                </li>
-        <li class="divider"></li>
-                <li> <a href="#">Consulter la liste</a>
-
-                </li>
-          </ul>
-          </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tournoi <b class="caret"></b></a>
-
-            <ul
-            class="dropdown-menu">
-              <li> <a href="#">Créer un tournoi</a>
-
-              </li>
-              <li> <a href="#">Modifier un tournoi</a>
-
-              </li>
-        <li class="divider"></li>
-              <li> <a href="#">Supprimer un tournoi</a>
-
-              </li>
-              <li class="divider"></li>
-              <li> <a href="#">Separated link</a>
-
-              </li>
-              <li class="divider"></li>
-              <li> <a href="#">One more separated link</a>
-
-              </li>
-              </ul>
-          </li>
-		              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Boutique <b class="caret"></b></a>
-
-              <ul
-              class="dropdown-menu">
-				<li> <a href="#">Accéder à la boutique</a></li>
-                <li> <a href="#">Lister les articles</a></li>
-				 <li class="divider"></li>
-				<li> <a href="#">Importer un catalogue</a></li>
-
-          </ul>
-          </li>
-          </ul>
-          <form class="navbar-form navbar-right" role="search"> 
-      <label for="" class="small">Connecté: DESNOS Mickael</label> &nbsp;&nbsp;
-      <a class="btn btn-info btn-xs">Deconnexion</a>
-
-          </form>
-        </div>
-        <!-- /.navbar-collapse -->
-        <div class="form-group">
-          <!-- <input type="text" class="form-control" placeholder="Login">          <input type="password" class="form-control" placeholder="Mot de passe">        <button type="submit" class="btn btn-default">Connexion</button>       -->
-         <!-- <label for="" class="form-control">Connecté en tant que DESNOS Mickael</label>-->
-        </div>
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-    
-     <div class="container">
-      <section class="conteneur">
-        <ol class="breadcrumb">
-          <li> <a href="index.html">Accueil</a>
-
-          </li>
-        
-        </ol>
-        <div class="panel panel-default logo">
-          <div class="panel-heading">Bienvenue sur le site,</div>
-          <br/>
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-            <ul style="list-style-type: none">
-              <li><a href="gererAdherent.html">Gérer les adhérents</a></li>
-              <li><a href="gerertournoi.html"> Gérer un tournoi</a></li>
-              <li><a href="#">Gérer les entrainements</a></li>
-              <li><a href="#">Acceder à la boutique</a></li>
-              <li><a href="administrer_droit.html">Administrer le site</a></li>
-            </ul>
-
-            </div>
-            <div class="col-md-4"></div>
-          </div>
-          <br/>
-
-        </div>
-      </section>
-      <footer class="text-muted">
-        <center>
-          <small>© Copyright 2014, Le Club Badminton Cessonais réalisé par l'équipe RAM</small>
-        </center>
-        <br/>
-      </footer>
-    </div>
-    
-   
-    <script src="js/monJs.js"></script>
-  </body>
+	<script src="js/monJs.js"></script>
+</body>
 
 </html>
