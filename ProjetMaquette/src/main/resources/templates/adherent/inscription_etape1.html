@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Club Badminton Cessonnais - Inscription</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> <a class="navbar-brand" href="#">Club Badminton Cessonnais</a>
+
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Adhérent <b class="caret"></b></a>
+
+            <ul
+            class="dropdown-menu">
+            <li><a href="#">Inscription</a>
+
+            </li>
+            <li><a href="#">Rechercher</a>
+
+            </li>
+            <li><a href="#">Consulter la liste</a>
+
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tournoi <b class="caret"></b></a>
+
+          <ul
+          class="dropdown-menu">
+          <li><a href="#">Créer un tournoi</a>
+
+          </li>
+          <li><a href="#">Modifier un tournoi</a>
+
+          </li>
+          <li><a href="#">Supprimer un tournoi</a>
+
+          </li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a>
+
+          </li>
+          <li class="divider"></li>
+          <li><a href="#">One more separated link</a>
+
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group ">
+          <form class="navbar-form navbar-right" role="search"> 
+		  <label for="" class="small">Connecté: DESNOS Mickael</label> &nbsp;&nbsp;
+		  <a class="btn btn-info btn-xs">Deconnexion</a>
+          </form>
+    </div>
+  </form>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <section class="conteneur">
+    <ol class="breadcrumb">
+      <li><a href="index.html">Accueil</a>
+
+      </li>
+      <li><a href="#">Adhérent</a>
+
+      </li>
+      <li class="active">Inscription</li>
+    </ol>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Inscription</h3>
+      </div>
+      <br>
+      <div class="panel-body">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Identification</a>
+
+          </li>
+          <li><a href="inscription_etape2.html">Coordonnées</a>
+
+          </li>
+          <li><a href="inscription_etape3.html">Licence</a>
+
+          </li>
+          <li><a href="inscription_etape4.html">Documents</a>
+
+          </li>
+          <li><a href="inscription_etape5.html">Récapitulatif</a>
+
+          </li>
+        </ul>
+        <br/>
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="inputNom" class="col-sm-2 control-label">Nom</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="inputNom" placeholder="Nom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPrenom" class="col-sm-2 control-label">Prénom</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputDateNaiss" class="col-sm-2 control-label">Date de naissance</label>
+            <div class="col-sm-5">
+              <div class="input-group date" id="dp3" data-date-format="dd/MM/yyyy">
+                <input id="inputDateNaiss" class="form-control" type="date" placeholder="jj/mm/aaaa">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-4 col-sm-offset-4">
+              <button type="button" class="btn btn-default">Annuler</button>
+              <button type="button" class="btn btn-primary" id="next">Suivant</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="text-muted">
+    <center>
+      <small>© Copyright 2014, Le Club Badminton Cessonais réalisé par l'équipe RAM</small>
+    </center>
+    <br>
+  </footer>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Information</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="et2">Suivant</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Attention !</h4>
+      </div>
+      <div class="modal-body">
+		Un Adhérent portant ce nom, prénom et date de naissance est déja inscrit.
+		Voulez vous le modifier ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="et3">Annuler</button>
+         <button type="button" class="btn btn-warning" data-dismiss="modal" id="et3">Suivant</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+$( document ).ready(function() {
+
+$("#next").click(function(){
+
+
+		if(	$("#inputNom").val()!=""  && 
+			$("#inputPrenom").val()!="" &&
+			($("#inputDateNaiss").val()!="" && $("#inputDateNaiss").val()<"1996-01-01")){
+			//alert("Pas d'adéhrent existant");
+			    
+				$('#myModal').modal('show');	
+				 	$("#et2").click(function(){
+						self.location.href='inscription_etape2.html';
+					});	
+		}else
+		
+		if(	$("#inputNom").val()=="BELLEMAR"  && 
+			$("#inputPrenom").val()=="xavier" &&
+			$("#inputDateNaiss").val()=="1980-04-01" ){
+			//alert("Pas d'adéhrent existant");
+			    
+				$('#myModal1').modal('show');		
+				 	//$("#et2").click(function(){
+					//	self.location.href='inscription_etape2.html';
+					//});	
+		}
+		
+	});
+	
+	//$("#inputDateNaiss").focusout(function() {
+    	//if($("#inputNom").val()=="BELLEMAR"){
+		//	$('#myModal1').modal('show');	
+		//}	
+  	//});
+	
+});	
+</script>
+</html>
