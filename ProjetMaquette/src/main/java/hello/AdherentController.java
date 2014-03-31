@@ -19,4 +19,9 @@ public class AdherentController extends WebMvcConfigurerAdapter {
 	public String gerer() {
 		return "adherent/inscription_etape1";
 	}
+	
+	@RequestMapping(value="/2")
+	public String inscription2() {
+		return "adherent/inscription_etape2";
+	}
 }

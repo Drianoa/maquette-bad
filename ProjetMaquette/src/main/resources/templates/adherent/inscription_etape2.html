@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<div th:include="header"></div>
+<body>
+<div th:include="menu"></div>
+<div class="container">
+  <section class="conteneur">
+    <ol class="breadcrumb">
+      <li><a href="index.html">Accueil</a>
+
+      </li>
+      <li><a href="#">Adhérent</a>
+
+      </li>
+      <li class="active">Inscription</li>
+    </ol>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Inscription</h3>
+      </div>
+      <br/>
+      <div class="panel-body">
+        <ul class="nav nav-tabs">
+          <li class=""> <a href="inscription_etape1.html">Identification</a>
+
+          </li>
+          <li class="active"><a href="#">Coordonnées</a>
+
+          </li>
+          <li><a href="inscription_etape3.html">Licence</a>
+
+          </li>
+          <li><a href="inscription_etape4.html">Documents</a>
+
+          </li>
+          <li><a href="inscription_etape5.html">Récapitulatif</a>
+
+          </li>
+        </ul>
+        <br/>
+        <form class="form-horizontal" role="form" id="telu">
+          <div class="form-group">
+            <label for="inputText" class="col-sm-2 control-label">Lieu de naissance</label>
+            <div class="col-sm-5">
+              <input class="form-control" id="inputText" placeholder="" type="text"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputNom" class="col-sm-2 control-label">Sexe</label>
+            <div class="col-sm-5">
+                 <div class="radio">
+                  <label>
+                   <input type="radio" name="optionsRadios" id="optionsRadios1" value="H" checked="checked"/>
+                   Homme
+                 </label>
+               </div>
+               <div class="radio">
+                <label>
+                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="F"/>
+                 Femme
+               </label>
+            </div>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-5">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
+            </div>
+          </div>
+          <div class="form-group" id="loul">
+            <label for="" class="col-sm-2 control-label">Adresse</label>
+            <div class="col-sm-5">
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="form-group" id="cp">
+            <label for="inputText" class="col-sm-2 control-label">Code postal</label>
+            <div class="col-sm-5">
+              <input class="form-control" id="inputText" placeholder="" type="text"/>
+            </div>
+          </div>
+          <div class="form-group" id="ville">
+            <label for="inputText" class="col-sm-2 control-label">Ville</label>
+            <div class="col-sm-5">
+              <input class="form-control" id="inputText" placeholder="" type="text"/>
+            </div>
+          </div>
+          <div class="form-group" id="tel">
+            <label for="inputText" class="col-sm-2 control-label">Téléphone</label>
+            <div class="col-sm-5">
+              <input class="form-control" id="inputText" placeholder="" type="text"/>
+            </div>
+          </div>
+          <div class="form-group" id="loul">
+            <label for="" class="col-sm-2 control-label">Coordonnées professionelles</label>
+            <div class="col-sm-5">
+              <textarea class="form-control" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="form-group" id="persu">
+            <label for="inputText" class="col-sm-2 control-label">Personne à contacter en cas d'urgence</label>
+            <div class="col-sm-5">
+              <input class="form-control" id="inputText" placeholder="" type="text"/>
+            </div>
+          </div>
+          <div class="form-group" id="telu">
+            <label for="inputText" class="col-sm-2 control-label">Téléphone d'urgence</label>
+            <div class="col-sm-5">
+              <input class="form-control" id="inputText" placeholder="" type="text"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-4 col-sm-offset-4">
+              <button type="button" class="btn btn-default">Annuler</button>
+              <button type="button" class="btn btn-primary" id="next">Suivant</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div th:include="footer"></div>
+</div>
+</body>
+<script>
+$( document ).ready(function() {
+
+	$("#next").click(function(){
+			self.location.href='inscription_etape3.html';
+	});
+});	
+</script>
+
+</html>
